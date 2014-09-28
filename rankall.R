@@ -69,5 +69,6 @@ rankall <- function(outcome, num = "best") {
     }
     }
     row.names(results) <- results$State
+    names(results) <- c("hospital","state")
     return(results)
 }
